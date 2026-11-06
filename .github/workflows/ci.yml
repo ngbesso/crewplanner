@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]      # à chaque PR vers main
+  push:
+    branches: [main]      # et après chaque fusion
+
+jobs:
+  build:
+    runs-on: ubuntu-latest   # machine Linux fournie par GitHub
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v5
+
+      - name: Installer .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restaurer les paquets NuGet
+        run: dotnet restore
+
+      - name: Vérifier le formatage du code
+        run: dotnet format --verify-no-changes
+
+      - name: Compiler le projet
+        run: dotnet build --no-restore
+
+      - name: Exécuter   les tests 
+        run: dotnet test --no-build 
