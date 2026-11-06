@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CrewPlanner.Api/CrewPlanner.Api.csproj" />
+    <Project Path="src/CrewPlanner.Application/CrewPlanner.Application.csproj" />
+    <Project Path="src/CrewPlanner.Infrastructure/CrewPlanner.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CrewPlanner.Application.Tests/CrewPlanner.Application.Tests.csproj" />
+    <Project Path="tests/CrewPlanner.Domain.Tests/CrewPlanner.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
