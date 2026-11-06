@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/CrewPlanner.Api/CrewPlanner.Api.csproj" />
     <Project Path="src/CrewPlanner.Application/CrewPlanner.Application.csproj" />
+    <Project Path="src/CrewPlanner.Domain/CrewPlanner.Domain.csproj" />
     <Project Path="src/CrewPlanner.Infrastructure/CrewPlanner.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
