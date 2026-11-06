@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <!-- Sécurité des types -->
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Qualité : un avertissement bloque la compilation -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- Analyseurs de code Microsoft, dernière version -->
+    <AnalysisLevel>latest</AnalysisLevel>
+
+    <!-- Les règles de style du .editorconfig sont vérifiées à la compilation -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+</Project>
